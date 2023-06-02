@@ -1,0 +1,78 @@
+<MyGridlayout>:
+    cols: 1
+    canvas.before:
+        Color:
+            rgba: 0, 0, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+    Label:
+        text: 'Información Hidropower'
+        font_size: 30
+        font_name: 'fonts/Roboto-Bold.ttf'
+        color: 0, 1, 0, 1
+        size_hint: 0.1, 0.1
+        height: 40
+    GridLayout:
+        cols: 1
+        Label:
+            text: 'Componente principal'
+            font_size: 20
+            #font_name: 'fonts/Roboto.ttf'
+            size_hint: 0.1, 0.1
+            height: 40
+##############################################333
+        GridLayout:
+            cols: 2
+            Label:
+                text: 'Nivel de agua'
+                font_size: 20
+                #font_name: 'fonts/Roboto.ttf'
+                size_hint: 0.5, None
+                height: 40
+            Label:
+                text: 'Estado'
+                font_size: 20
+                #font_name: 'fonts/Italic.ttf'
+                size_hint: 0.5, None
+                height: 40
+            TextInput:
+                size_hint: 0.5, None
+                height: 40
+                multiline: False
+
+            TextInput:
+                size_hint: 0.5, None
+                height: 40
+                multiline: False
+##############################################333
+        GridLayout:
+            cols: 1
+            Label:
+                text: 'Componente Auxiliar'
+                font_size: 20
+                size_hint: 0.8, None
+                height: 10
+############################################
+            GridLayout:
+                cols: 2
+                Label:
+                    text: 'Nivel de agua'
+                    font_size: 20
+                    size_hint: 0.5, None
+                    height: 40
+                Label:
+                    text: 'Estado'
+                    font_size: 20
+                    size_hint: 0.5, None
+                    height: 40
+            
+                TextInput:
+                    size_hint: 0.5, None
+                    height: 40
+                    multiline: False
+                TextInput:
+                    size_hint: 0.5, None
+                    height: 40
+                    multiline: False
